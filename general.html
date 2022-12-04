@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<!-- <button id="zerar" onclick="zerarPontos()">Zerar</button> -->
+    <!-- <button onclick="gameOver()">Finalizar</button> -->
+<div class="wrapper">
+
+<p>General</p>
+
+<!-- <div id="conteiner-cronometro">
+
+    <div id="counter">00:00:00</div>
+
+    <div id="cronometro">
+        
+        <button onclick="play()"><img src="imagens/play-btn.png" alt=""></button>
+        <button onclick="pause()"><img src="imagens/pause-btn.png" alt=""></button>
+        <button onclick="stop()"><img src="imagens/stop-btn.png" alt=""></button>
+    </div>
+
+</div> -->
+
+    <!-- JOGADOR 1 -->
+
+    <!-- Pai -->
+    <div class="container" id="conteiner1">
+
+        <!-- filho 1 -->
+        <div class="avatar" id="play1"> 
+            <!-- neto 1 -->
+            <input type="text" required  id="jog1" class="input-avatar"> 
+            <div id="timesPlayed1" class="timesplayed">0</div> 
+        </div>
+
+        <!-- filho 2 -->
+        <input type="text" name="inp" class="input1" id="one" required placeholder="1" onchange="calcularTotal()"onkeyup="timesPlayed()">
+        <input type="text" name="inp" class="input1" id="two" required placeholder="2" onchange="calcularTotal()"onkeyup="timesPlayed()">
+        <input type="text" name="inp" class="input1" id="thr" required placeholder="3" onchange="calcularTotal()"onkeyup="timesPlayed()">
+        <input type="text" name="inp" class="input1" id="fou" required placeholder="4" onchange="calcularTotal()"onkeyup="timesPlayed()">
+        <input type="text" name="inp" class="input1" id="fiv" required placeholder="5" onchange="calcularTotal()"onkeyup="timesPlayed()">
+        <input type="text" name="inp" class="input1" id="six" required placeholder="6" onchange="calcularTotal()"onkeyup="timesPlayed()">
+        <input type="text" name="inp" class="input1" id="ful" required placeholder="F" onchange="calcularTotal()"onkeyup="timesPlayed()">
+        <input type="text" name="inp" class="input1" id="seq" required placeholder="S" onchange="calcularTotal()"onkeyup="timesPlayed()">
+        <input type="text" name="inp" class="input1" id="poc" required placeholder="P" onchange="calcularTotal()"onkeyup="timesPlayed()">
+        <input type="text" name="inp" class="input1" id="gen" required placeholder="G" onchange="calcularTotal()"onkeyup="timesPlayed()">
+        <!-- filho 11 -->
+        <input type="text" name="inp" class="inputTotal" id="tot1"  disabled>
+
+        
+
+    </div>
+
+    <!-- JOGADOR 2 -->
+    <div class="container" id="conteiner2">
+
+        <div class="avatar" id="play2">
+            <input type="text" required  id="jog2" class="input-avatar">
+            <div id="timesPlayed2" class="timesplayed">0</div>
+        
+        </div>
+
+        <input type="text" name="inp" class="input2" id="one2" required placeholder="1" onchange="calcularTotal2()" onkeyup="timesPlayed2()">
+        <input type="text" name="inp" class="input2" id="two2" required placeholder="2" onchange="calcularTotal2()" onkeyup="timesPlayed2()">
+        <input type="text" name="inp" class="input2" id="thr2" required placeholder="3" onchange="calcularTotal2()" onkeyup="timesPlayed2()">
+        <input type="text" name="inp" class="input2" id="fou2" required placeholder="4" onchange="calcularTotal2()" onkeyup="timesPlayed2()">
+        <input type="text" name="inp" class="input2" id="fiv2" required placeholder="5" onchange="calcularTotal2()" onkeyup="timesPlayed2()">
+        <input type="text" name="inp" class="input2" id="six2" required placeholder="6" onchange="calcularTotal2()" onkeyup="timesPlayed2()">
+        <input type="text" name="inp" class="input2" id="ful2" required placeholder="F" onchange="calcularTotal2()" onkeyup="timesPlayed2()">
+        <input type="text" name="inp" class="input2" id="seq2" required placeholder="S" onchange="calcularTotal2()" onkeyup="timesPlayed2()">
+        <input type="text" name="inp" class="input2" id="poc2" required placeholder="P" onchange="calcularTotal2()" onkeyup="timesPlayed2()">
+        <input type="text" name="inp" class="input2" id="gen2" required placeholder="G" onchange="calcularTotal2()" onkeyup="timesPlayed2()">
+
+        <input type="text" name="inp" id="tot2" class="inputTotal" disabled>
+
+        <!-- <button onclick="jogar2()">Jogar</button> -->
+
+    </div>
+
+    <!-- JOGADOR 3 -->
+    <div class="container" id="conteiner3">
+
+        <div class="avatar" id="play3">
+            <input type="text" required  id="jog3" class="input-avatar">
+            <div id="timesPlayed3" class="timesplayed">0</div>
+        
+        </div>
+
+        <input type="text" name="inp" class="input3" id="one3" required placeholder="1" onchange="calcularTotal3()" onkeyup="timesPlayed3()">
+        <input type="text" name="inp" class="input3" id="two3" required placeholder="2" onchange="calcularTotal3()" onkeyup="timesPlayed3()">
+        <input type="text" name="inp" class="input3" id="thr3" required placeholder="3" onchange="calcularTotal3()" onkeyup="timesPlayed3()">
+        <input type="text" name="inp" class="input3" id="fou3" required placeholder="4" onchange="calcularTotal3()" onkeyup="timesPlayed3()">
+        <input type="text" name="inp" class="input3" id="fiv3" required placeholder="5" onchange="calcularTotal3()" onkeyup="timesPlayed3()">
+        <input type="text" name="inp" class="input3" id="six3" required placeholder="6" onchange="calcularTotal3()" onkeyup="timesPlayed3()">
+        <input type="text" name="inp" class="input3" id="ful3" required placeholder="F" onchange="calcularTotal3()" onkeyup="timesPlayed3()">
+        <input type="text" name="inp" class="input3" id="seq3" required placeholder="S" onchange="calcularTotal3()" onkeyup="timesPlayed3()">
+        <input type="text" name="inp" class="input3" id="poc3" required placeholder="P" onchange="calcularTotal3()" onkeyup="timesPlayed3()">
+        <input type="text" name="inp" class="input3" id="gen3" required placeholder="G" onchange="calcularTotal3()" onkeyup="timesPlayed3()">
+
+        
+        <input type="text" name="inp" id="tot3" class="inputTotal" disabled>
+        
+        <!-- <button onclick="jogar3()">Jogar</button> -->
+
+    </div>
+
+    <!-- JOGADOR 4 -->
+    <div class="container" id="conteiner4">
+
+        <div class="avatar" id="play4">
+            <input type="text" required id="jog4" class="input-avatar">
+            <div id="timesPlayed4" class="timesplayed">0</div>
+        </div>
+
+        <input type="text" name="inp" class="input4" id="one4" required placeholder="1" onchange="calcularTotal4()" onkeyup="timesPlayed4()">
+        <input type="text" name="inp" class="input4" id="two4" required placeholder="2" onchange="calcularTotal4()" onkeyup="timesPlayed4()">
+        <input type="text" name="inp" class="input4" id="thr4" required placeholder="3" onchange="calcularTotal4()" onkeyup="timesPlayed4()">
+        <input type="text" name="inp" class="input4" id="fou4" required placeholder="4" onchange="calcularTotal4()" onkeyup="timesPlayed4()">
+        <input type="text" name="inp" class="input4" id="fiv4" required placeholder="5" onchange="calcularTotal4()" onkeyup="timesPlayed4()">
+        <input type="text" name="inp" class="input4" id="six4" required placeholder="6" onchange="calcularTotal4()" onkeyup="timesPlayed4()">
+        <input type="text" name="inp" class="input4" id="ful4" required placeholder="F" onchange="calcularTotal4()" onkeyup="timesPlayed4()">
+        <input type="text" name="inp" class="input4" id="seq4" required placeholder="S" onchange="calcularTotal4()" onkeyup="timesPlayed4()">
+        <input type="text" name="inp" class="input4" id="poc4" required placeholder="P" onchange="calcularTotal4()" onkeyup="timesPlayed4()">
+        <input type="text" name="inp" class="input4" id="gen4" required placeholder="G" onchange="calcularTotal4()" onkeyup="timesPlayed4()">
+        
+        <input type="text" name="inp" id="tot4" class="inputTotal" disabled>
+
+        <!-- <button onclick="jogar4()">Jogar</button> -->
+
+    </div>
+</div>
+
+<div id="botoes">
+    <button onclick="recomecar()">Recomeçar</button>
+    <button onclick="showTimesPlayed()">Mostrar Rodadas</button>
+    <button onclick="showTotais()">Mostrar Totais</button>
+    <!-- <button onclick="mostrarClassificacao()">Vencedor</button> -->
+</div>
+
+
+    <script src="script.js"></script>
+    <script src="cronometro.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+}
+
+p {
+    position: absolute;
+    color: gold;
+    letter-spacing: 0.1rem;
+    font-size: 5rem;
+    top: 20px;
+    left: 80px;
+    text-shadow: 0 0 10px rgb(229, 195, 0);
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(8, 32, 8, 0.722), rgba(0, 0, 0, 0.507), rgb(0, 0, 0, 0.2)), url(imagens/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    padding-right: 40px;
+}
+
+/* conteiner dos jogadores */
+.container {
+    width: 13%;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.container > input:nth-child(1) {
+    border: none;
+    outline: none;
+}
+
+.container > button {
+    margin: auto;
+    background-color: gray;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    position: relative;
+}
+
+.timesplayed {
+    background: #FFD700;
+    color: rgb(62, 62, 62);
+    font-family: sans-serif;
+    font-weight: bolder;
+    width: 1.7rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    font-size: .8rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -.7rem;
+    right: -.7rem;
+    display: none;
+}
+
+.mostrarJogadas {
+    display: block;
+}
+
+.avatar > input {
+    font-size: 0.7em;
+}
+
+.avatar, .total {
+    padding: 10px;
+    background-color: #c90000;
+    /* background-color: #FFD700; */
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.total {
+    border-radius: 7px;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #000;
+}
+
+input {
+    width: 80%;
+    height: 2em;
+    margin-bottom: 5px;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 7px;
+    border: none;
+    background-color: #fff;
+}
+
+input:focus {
+    background-color: #FFD700;
+    outline: none;
+    border: none;
+}
+
+input:valid:not(.inputTotal) {background-color: #FFD700;}
+
+input.input-avatar:valid {background-color: #c90000; color: #fff; font-weight: normal;}
+
+::placeholder {
+    color: #b0b0ad;
+    opacity: 0.7;
+}
+
+button {
+    padding: 8px;
+    width: fit-content;
+    margin: 0 15px 0 0;
+    background-color: #7C180A;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: 300;
+    box-shadow: 0px 10px 13px -7px #343434;
+    transition: all ease-in-out 0.3s;
+}
+
+#botoes {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.jogar {
+    background-color: #FFD700;
+}
+
+#tot4, #tot3,#tot2,#tot1 { 
+    background-color: #FFD700;
+}
+
+#tot1, #tot2, #tot3, #tot4 {
+    color: #fff;
+    background: #000;
+    background: #c90000;
+    border: 4px solid #FFD700;
+    margin-top: .5rem;
+}
+
+body {
+    background: #747373;
+}
+.ocultar {
+    visibility:hidden;
+}
+
+#conteiner-cronometro {
+    position: absolute;
+    top: 20vh;
+    left: 15vh;
+    /* border: 1px solid white; */
+}
+
+#counter {
+    padding: .5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+#cronometro {
+    width: 300px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cronometro > button {
+    width: 70px;
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    font-size: .8rem;
+}
+
+#cronometro > button:hover {
+    background-color: #7C180A;
+    color: white;
+}
+
+button > img {
+    width: 15px;
+}
